@@ -67,9 +67,12 @@ h6 { font-size: 16px;}
 .intro-wrapper{
   background-color: var(--secondaryColor);
   border: 1px solid var(--borderColor);
+  border-radius: 5px 5px 0 0;
+
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
   box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3em 30em;
@@ -80,7 +83,42 @@ h6 { font-size: 16px;}
 }
 
 .nav-wrapper{
+  border-radius: 5px 5px 0 0;
   grid-area: nav-wrapper;
+  border-bottom: 1px solid var(--borderColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mainColor);
+}
+
+.dots-wrapper{
+  display: flex;
+  padding: 10px;
+}
+
+#dot-1{
+  background-color: #FC6058;
+}
+
+#dot-2{
+  background-color: #fec02f;
+}
+
+#dot-3{
+  background-color: #2aca3e;
+}
+
+.browser-dot{
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+  box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 }
 
 .left-column{
