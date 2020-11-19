@@ -13,6 +13,7 @@
   --previewShadow: #f0ead6;
 
   --buttonColor: black;
+  --buttonHover:  #17a2b8;
 }
 
 html, body{
@@ -355,6 +356,11 @@ h6 { font-size: 16px;}
   color: #fff;
   background-color: var(--buttonColor);
   border: none;
+  transition: .3s ease background-color;
+}
+
+#submit-btn:hover{
+  background-color: var(--buttonHover);
 }
 
 @media screen and (max-width: 1200px){
