@@ -184,7 +184,7 @@ h6 { font-size: 16px;}
 }
 
 .theme-dot:hover{
-  border-width: 5px;
+  border-color: var(--mainColor);
 }
 
 #light-mode{
@@ -366,7 +366,7 @@ h6 { font-size: 16px;}
 
 #status{
   width: 90%;
-  max-width: 500px;
+  max-width: 615px;
   text-align: center;
   padding: 10px;
   margin: auto;
@@ -376,7 +376,29 @@ h6 { font-size: 16px;}
 }
 
 #status.success{
-  background-color: var(--buttonColor);
+  background-color: var(--buttonHover);
+  animation: status 4s ease forwards;
+}
+
+#status.error{
+  background-color: #FC6058;
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status{
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 @media screen and (max-width: 1200px){
